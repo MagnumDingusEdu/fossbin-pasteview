@@ -5,10 +5,22 @@ body {
     background: #0d1117;
 }
 
-.cm-gutter, .cm-lineNumbers {
+.cm-gutter,
+.cm-lineNumbers {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
     user-select: none;
+}
+
+#menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.cm-panels {
+    z-index: 100 !important;
 }

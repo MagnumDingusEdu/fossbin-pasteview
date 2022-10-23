@@ -7,11 +7,10 @@ export default {
     input: 'src/highlight.ts',
     output: {
         dir: 'output',
-        format: 'iife',
         compact: true,
         plugins: [terser()]
-
+        
     },
     plugins: [typescript(), nodeResolve()],
-
+    preserveEntrySignatures: 'strict',
 };
